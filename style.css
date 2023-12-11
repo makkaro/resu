@@ -1,0 +1,109 @@
+/* === ENV ================================================================== */
+:root {
+    --gray-1: hsl(0, 0%, 10%);
+    --gray-2: hsl(0, 0%, 20%);
+    --gray-3: hsl(0, 0%, 30%);
+    --gray-4: hsl(0, 0%, 40%);
+    --gray-5: hsl(0, 0%, 50%);
+    --gray-6: hsl(0, 0%, 60%);
+    --gray-7: hsl(0, 0%, 70%);
+    --gray-8: hsl(0, 0%, 80%);
+    --gray-9: hsl(0, 0%, 90%);
+}
+
+
+/* === RESET ================================================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* === FONT ================================================================= */
+@font-face {
+    font-family: Inter var;
+    src: url('InterVar.ttf');
+}
+
+:root {
+    font: .75rem Inter var, Arial, sans-serif;
+}
+
+
+/* === OTHER ================================================================ */
+:root {
+    line-height: 1.5rem;
+}
+
+html {
+    background-color: var(--gray-9);
+}
+
+body {
+    width: 21cm;
+    height: 29.7cm;
+    padding: 1.25cm;
+    background-color: white;
+    box-shadow: .25cm .25cm .25cm var(--gray-3);
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    margin-bottom: .125cm;
+    background-image: linear-gradient(
+        to right,
+        var(--gray-9),
+        var(--gray-7),
+        var(--gray-9)
+    );
+}
+
+h1 {
+    margin-bottom: .5cm;
+}
+
+h2 {
+    margin-bottom: .25cm;
+    font-size: 1.25rem;
+}
+
+ul {
+    padding-left: .25cm;
+}
+
+.columns {
+    display: flex;
+    column-gap: .5cm;
+    margin-bottom: .5cm;
+}
+
+.footer {
+    color: var(--gray-1);
+}
+
+.main {
+    order: 1;
+    width: calc(100% / 3 * 2);
+}
+
+.side {
+    width: calc(100% / 3);
+}
+
+.section {
+    margin-bottom: .5cm;
+}
+
+.position {
+    margin-bottom: .125cm;
+}
+
+.text-gray {
+    color: var(--gray-3);
+}
+
+.bold {
+    font-weight: bold;
+}
